@@ -1,9 +1,8 @@
 package com.ciandt.ffejfar.webservicechallenge.webservice;
 
-import javax.jws.WebService;
+public class HelloWorld {
 
-@WebService
-public interface HelloWorld {
-
-	public String sayHelloWorld();
+	public String sayHelloWorld(){
+		return "Hello World!";
+	}
 }
