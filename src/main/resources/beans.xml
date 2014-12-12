@@ -15,10 +15,12 @@
 	   ">
 
 
-	<!-- <context:component-scan base-package="com.ciandt.ffejfar.webServiceChallenge" 
-		/> -->
+	<context:component-scan base-package="com.ciandt.ffejfar" />
 
-<!-- 	<context:annotation-driven /> -->
+    <context:annotation-config/>
+    <bean class="com.ciandt.ffejfar.config.ConfigSpring"/>
+    
+	<!-- <context:annotation-driven /> -->
 
 	<jaxws:endpoint id="accountWebService"
 		implementor="com.ciandt.ffejfar.webServiceChallenge.account.service.impl.AccountServiceImpl"
